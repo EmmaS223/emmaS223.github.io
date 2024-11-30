@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    
+    <div id="game-container">
+      <div id="info">
+        
+        <! -- Title --> 
+      <h1>
+         TIC TAC TOE
+        </h1>
+        
+<!--     // Score and turns //  -->
+   
+     <div id="turn-indicator">
+  Current Turn: <span id="current-turn">Player 1</span>
+</div> 
+  
+      <div id="scoreboard">
+    <p>Player 1: <span id="score1">0</span></p>
+    <p>Player 2: <span id="score2">0</span></p>
+    
+</div>
+  
+    
+<!--     // Grid of tic tac toe tiles //  -->
+    
+  <div onclick="checkWin" id="grid">
+  <div class="cell" data-index="0"></div>
+  <div class="cell" data-index="1"></div>
+  <div class="cell" data-index="2"></div>
+  <div class="cell" data-index="3"></div>
+  <div class="cell" data-index="4"></div>
+  <div class="cell" data-index="5"></div>
+  <div class="cell" data-index="6"></div>
+  <div class="cell" data-index="7"></div>
+  <div class="cell" data-index="8"></div>
+  </div>
+  </div>    
+
+
+
+    <!-- Left side GIF 
+<div id="left-gif" class="win-gif" style="display: none;">
+  <img src="https://cdn.glitch.global/839199cd-5ce5-4a95-b253-45f302e4be2e/woo.gif?v=1732071661082" alt="LeftGif">
+</div> -->
+
+<!-- Right side GIF -->
+<div id="right-gif" class="win-gif" style="display: none;">
+  <img src="https://cdn.glitch.global/839199cd-5ce5-4a95-b253-45f302e4be2e/woo.gif?v=1732071661082" alt="RightGif">
+</div>
+    
+<!--  <button onclick = "reset"> Play Again </button> --> 
+      <button id="reset" style="display:none;">Play Again!</button>
+    </div>
+    
+    <script src="/script.js"></script>
+  </body>
+</html>
