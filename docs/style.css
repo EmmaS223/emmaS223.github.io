@@ -1,0 +1,82 @@
+#game-container {
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: center; 
+  gap: 20px; /*hoping this will provide space for the gifs on either side*/
+  margin-top:40px
+  
+}
+#scoreboard {
+  margin-bottom: 20px;
+  text-align: center;
+  justify-content: center;
+  position: flex;
+}
+
+#turn-indicator {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  justift-content:center
+}
+
+#current-turn {
+  padding: 5px;
+
+}
+
+
+#grid {
+  background-color: #6A927F;
+  width: 370px;
+  height: 370px;
+  display: grid; /* Change to grid layout */
+  grid-template-columns: repeat(3, 1fr); /* 3 columns of equal width */
+  grid-template-rows: repeat(3, 1fr); /* 3 rows of equal height */
+  gap: 30px; /* Space between cells */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+}
+
+.cell {
+  background-color: #B2d3c2;
+}
+
+#img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+}
+
+
+#right-gif {
+  right: 70%; /* Position the right GIF on the right side */
+} 
+
+#reset {
+  position: fixed;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #6A927F;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+}
+
+/* #reset:hover {
+  background-color: #567A65;
+}
+ */
+
